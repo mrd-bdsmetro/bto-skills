@@ -1,9 +1,9 @@
 ---
-name: research-market
+name: bto-researchmarket
 description: Research sâu một thị trường bằng nhiều agent chạy song song, ra một bản research đã kiểm chứng, mọi nhận định gắn nhãn độ tin, số phải tự tính chứ không trích lại, bắt buộc có TAM SAM SOM. Dùng khi cần biết một thị trường có những ai, giá bao nhiêu, còn khoảng trống nào, trước khi build. Kích hoạt khi nói "research market", "research thị trường", "làm research về", "so sánh thị trường".
 ---
 
-# /research-market
+# /bto-researchmarket
 
 Từ một câu hỏi ra một bản research đáng tin, agent làm phần nặng, bạn giữ hai
 việc không giao được: đặt mục tiêu, và sàng lọc kết quả.

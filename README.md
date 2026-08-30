@@ -52,6 +52,15 @@ Tôi muốn build một sản phẩm tương tự Calendly.
 Câu một nó nhắc tên biến thay vì giá trị. Câu hai nó hỏi ngược mục tiêu một
 câu. Câu ba nó nhắc phân rã trước khi build. Đủ ba là xong.
 
+## Skill tự tốt lên, và bạn góp tay được
+
+Mỗi skill có sẵn phần cuối dạy agent ba việc: **eval** sau mỗi lần chạy xem
+thiếu gì, **thi thoảng lookup** kiểm lại giá và công cụ đã cũ, và **không
+biết thì hỏi người**: Discord của Build to Own hoặc Sơn Piaz. Bạn vấp chỗ
+nào mà skill chưa che thì sửa và gửi pull request, xem
+[CONTRIBUTING.md](CONTRIBUTING.md), có hướng dẫn fork, clone, mở PR từng
+bước, chưa quen git thì mở issue kể chuyện cũng được.
+
 ## Skill không thay bạn chịu trách nhiệm
 
 Skill làm agent nhớ luật và đi đúng quy trình. Nó không làm con số thành

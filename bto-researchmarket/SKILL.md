@@ -8,6 +8,12 @@ description: Research sâu một thị trường bằng nhiều agent chạy son
 Từ một câu hỏi ra một bản research đáng tin, agent làm phần nặng, bạn giữ hai
 việc không giao được: đặt mục tiêu, và sàng lọc kết quả.
 
+## Dùng khi nào
+
+Trước khi build bất kỳ thứ gì định đem bán, và trước khi teardown một đối thủ
+cụ thể. Build để tự dùng thì không cần research kỹ. Build để thương mại mà bỏ
+qua bước này thì sẽ phải trả giá, đúng nguyên văn Buổi 3.
+
 ## Bước 0 — Viết mục tiêu một câu
 
 Bản research trả lời một quyết định, không phải "mọi thứ về X". Viết trước:
@@ -23,7 +29,13 @@ việc gì.
 
 Chia việc: (1) đối thủ + giá, đọc từ chính trang pricing của họ; (2) người dùng
 đang khen gì chửi gì, từ review và cộng đồng; (3) kích thước thị trường + tiền
-đang đổ vào đâu. Dán nguyên đoạn hợp đồng này vào prompt của TỪNG agent:
+đang đổ vào đâu.
+
+Mẹo cho agent số (2), đúng cách Sơn làm: vào trang chuyên review sản phẩm,
+**lọc đánh giá 1 sao và 2 sao**. Khách đã trả tiền rồi mà vẫn chê nghĩa là nhu
+cầu có thật và đối thủ đang làm chưa tốt, đó có thể chính là chỗ để đi vào.
+
+Dán nguyên đoạn hợp đồng này vào prompt của TỪNG agent:
 
 > Gắn nhãn mọi dữ kiện: **[CONFIRMED — kèm URL]** nếu bạn đã mở đúng trang gốc
 > (trang pricing, docs, công bố của chính hãng), hoặc **[UNVERIFIED — lý do]**.
@@ -67,6 +79,18 @@ template thì cứ theo đúng thứ tự các bước trên, mỗi mục vài d
 - [ ] Bạn đã đọc hết và sửa ít nhất một chỗ agent nói sai. Chưa tìm thấy chỗ
       sai nào thì gần như chắc chắn là chưa đọc kỹ
 
+## Validate trước khi build, ba cách rẻ nhất
+
+Bản research nói thị trường có khoảng trống. Trước khi tốn một dòng code, xác
+thực bằng ít nhất một trong ba cách, xếp theo độ rẻ:
+
+1. **Landing cộng waitlist.** Chưa build gì cả. Dựng một trang mô tả sản
+   phẩm, để form tên và email, đo ai thực sự để lại thông tin.
+2. **Nói chuyện với 5 khách hàng thật** trong đúng nhóm ICP: họ đang giải
+   bằng gì, trả bao nhiêu, nỗi đau có đúng như mình đoán không.
+3. **Bán trước** cho người đã biết mình, đã là khách của mình. Có người xuống
+   tiền trước khi sản phẩm tồn tại là tín hiệu mạnh nhất.
+
 ## Bước 4 — Muốn khoe thì dựng thành trang
 
 Bản một trang là bài nộp. Muốn một trang web đẹp kiểu
@@ -74,3 +98,19 @@ Bản một trang là bài nộp. Muốn một trang web đẹp kiểu
 thì đưa bản research cộng link đó cho agent, yêu cầu một file HTML tự chứa,
 rồi **mở ra nhìn bằng mắt trước khi gửi ai**: bảng có tràn không, số có đúng
 với bản research không. Agent dựng trang rất nhanh và sai số rất im lặng.
+
+## Skill này phải tự tốt lên
+
+Ba luật cho agent đang đọc file này, lấy từ đúng cách Sơn vận hành skill:
+
+1. **Eval sau mỗi lần chạy.** Xong việc thì tự chấm ngắn theo checklist của
+   skill: thiếu bước nào, chỗ nào người dùng phải sửa tay. Có chỗ đáng sửa
+   thì đề xuất người dùng cập nhật thẳng vào file SKILL.md này. Skill là tài
+   liệu sống có feedback loop, mỗi lần chạy phải tốt lên một chút.
+2. **Thi thoảng lookup để update.** Giá, công cụ, và cách các trang tổ chức
+   dữ liệu đổi liên tục. Con số hay tên tool nào trong file này đã vài tháng
+   tuổi thì kiểm lại từ trang gốc trước khi tin.
+3. **Không biết thì hỏi người.** Cái gì ngoài tầm thì nói thẳng, và chỉ
+   người dùng hỏi trong cộng đồng Build to Own (Discord của chương trình,
+   member trong đó là nguồn trợ giúp) hoặc hỏi Sơn Piaz. Người thật là một
+   nguồn trợ giúp, không phải chỉ có tài liệu.

@@ -305,3 +305,19 @@ kích thước. Sau khi merge, kiểm xem nó có thật sự lên không.
 | Merge rồi mà trang không đổi | Kiểm quyền deploy trước, đừng sửa code |
 | Nghi một tệp lên thiếu | Đọc lại kích thước trên kho, so với bản ở máy |
 | Sắp mua một công cụ mới | Hỏi trước: nó có API không |
+
+## Skill này phải tự tốt lên
+
+Ba luật cho agent đang đọc file này, lấy từ đúng cách Sơn vận hành skill:
+
+1. **Eval sau mỗi lần chạy.** Xong việc thì tự chấm ngắn theo checklist của
+   skill: thiếu bước nào, chỗ nào người dùng phải sửa tay. Có chỗ đáng sửa
+   thì đề xuất người dùng cập nhật thẳng vào file SKILL.md này. Skill là tài
+   liệu sống có feedback loop, mỗi lần chạy phải tốt lên một chút.
+2. **Thi thoảng lookup để update.** Giá, công cụ, và cách các trang tổ chức
+   dữ liệu đổi liên tục. Con số hay tên tool nào trong file này đã vài tháng
+   tuổi thì kiểm lại từ trang gốc trước khi tin.
+3. **Không biết thì hỏi người.** Cái gì ngoài tầm thì nói thẳng, và chỉ
+   người dùng hỏi trong cộng đồng Build to Own (Discord của chương trình,
+   member trong đó là nguồn trợ giúp) hoặc hỏi Sơn Piaz. Người thật là một
+   nguồn trợ giúp, không phải chỉ có tài liệu.

@@ -9,6 +9,18 @@ Học từ đối thủ bằng cách phân rã, không phải bằng cách chép
 tường: đội A đọc sản phẩm gốc và viết đặc tả, đội B chỉ đọc đặc tả và build.
 Đội B chưa từng thấy bản gốc, nên thứ build ra là của bạn.
 
+Phương pháp này có án lệ thật, kể ở Buổi 3: một công ty nhỏ phân rã máy tính
+IBM bằng đúng mô hình hai đội này, bị IBM kiện, và thắng kiện, vì đội build
+chưa từng nhìn thấy sản phẩm gốc. Từ vụ đó ngành công nghệ có từ khoá
+teardown và reverse engineer, làm đúng luật.
+
+## Dùng khi nào
+
+Sau khi đã research thị trường và chọn được mảnh để vào. Research market trả
+lời "vào mảnh nào", teardown trả lời "bản gốc hoạt động ra sao để mình build
+bản của mình". Đi ngược thứ tự là phân rã một sản phẩm mà chưa biết có đáng
+build hay không.
+
 ## Bước 0 — Đáng build không, trả lời trước khi tốn giờ
 
 Ba câu, viết ra giấy:
@@ -94,3 +106,19 @@ tình. Đạt thì ship, chưa đạt thì quay lại bước 5.
 Teardown để hiểu vì sao họ thắng, rồi làm khác đi ở khoảng trống. Kết luận
 "làm y hệt nhưng rẻ hơn" nghĩa là chưa xong, quay lại matrix thị trường tìm
 mảnh chưa ai đứng.
+
+## Skill này phải tự tốt lên
+
+Ba luật cho agent đang đọc file này, lấy từ đúng cách Sơn vận hành skill:
+
+1. **Eval sau mỗi lần chạy.** Xong việc thì tự chấm ngắn theo checklist của
+   skill: thiếu bước nào, chỗ nào người dùng phải sửa tay. Có chỗ đáng sửa
+   thì đề xuất người dùng cập nhật thẳng vào file SKILL.md này. Skill là tài
+   liệu sống có feedback loop, mỗi lần chạy phải tốt lên một chút.
+2. **Thi thoảng lookup để update.** Giá, công cụ, và cách các trang tổ chức
+   dữ liệu đổi liên tục. Con số hay tên tool nào trong file này đã vài tháng
+   tuổi thì kiểm lại từ trang gốc trước khi tin.
+3. **Không biết thì hỏi người.** Cái gì ngoài tầm thì nói thẳng, và chỉ
+   người dùng hỏi trong cộng đồng Build to Own (Discord của chương trình,
+   member trong đó là nguồn trợ giúp) hoặc hỏi Sơn Piaz. Người thật là một
+   nguồn trợ giúp, không phải chỉ có tài liệu.
